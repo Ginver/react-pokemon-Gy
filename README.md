@@ -6,12 +6,10 @@ Poké API bestaat waarmee je Pokémon data mee kunt ophalen! Jottem!
 
 Je besluit om een applicatie te bouwen waarmee je alle Pokémons kunt bekijken, als een soort catalogus. Dat heeft vast nog nooit iemand gemaakt!
 
-![Pokémon logo](src/assets/screenshot.gif)
-
 Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
 ## Eindresultaat
-Deze opdracht draait niet om styling, maar om functionaliteit. De meest simpele variant zou er ongeveer zo uit zien:
+Focus je deze opdracht niet op styling, maar om functionaliteit. Maar omdat iedereen blij wordt van leuke kleurtjes is het voorbeeld toch voorzien van styling:
 
 ![Eindresultaat](src/assets/screenshot.gif)
 
