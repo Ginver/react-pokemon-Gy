@@ -9,7 +9,7 @@ Je besluit om een applicatie te bouwen waarmee je alle Pokémons kunt bekijken, 
 Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
 ## Eindresultaat
-Focus je deze opdracht niet op styling, maar om functionaliteit. Maar omdat iedereen blij wordt van leuke kleurtjes is het voorbeeld toch voorzien van styling:
+Focus je deze opdracht niet op styling, maar om functionaliteit. Maar omdat iedereen blij wordt van leuke kleurtjes, is het voorbeeld toch voorzien van styling:
 
 ![Eindresultaat](src/assets/screenshot.gif)
 
