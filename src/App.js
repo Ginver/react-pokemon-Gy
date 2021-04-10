@@ -25,42 +25,42 @@ function App() {
         fetchData('https://pokeapi.co/api/v2/{endpoint}/');
     },[pokemons]);
 
-  return (
-  <>
-      <div className="pokemon-container">
-     <img id="pokemon-gif" src="https://thumbs.gfycat.com/AjarLastingApisdorsatalaboriosa-small.gif" alt="pokemonbal" />
+    return (
+        <>
+            <div className="pokemon-container">
+                <img id="pokemon-gif" src="https://thumbs.gfycat.com/AjarLastingApisdorsatalaboriosa-small.gif" alt="pokemonbal" />
 
-     <div id="buttons">
-         {pokemons && console.log(pokemons)}
-          <button
-              type="button" id="back-button"
-              // disabled={!previousButton}
-              onClick={() => fetchData(previousButton)}
-          >
-              BACK
-          </button>
+                <div id="buttons">
+                    {pokemons && console.log(pokemons)}
+                    <button
+                        type="button" id="back-button"
+                        // disabled={!previousButton}
+                        onClick={() => fetchData(previousButton)}
+                    >
+                        BACK
+                    </button>
 
-          <button
-              type="button" id="next-button"
-              // disabled={!nextButton}
-              onClick={() => fetchData(nextButton)}
-          >
-              NEXT
-          </button>
-     </div>
-        <div id="pokemon-cards-container">
-              {pokemons && pokemons.map((pokemon) => {
-                  // return <p key={pokemon.name}> {pokemon.name}</p>})}
-                  // console.log(pokemon);
+                    <button
+                        type="button" id="next-button"
+                        // disabled={!nextButton}
+                        onClick={() => fetchData(nextButton)}
+                    >
+                        NEXT
+                    </button>
+                </div>
+                <div id="pokemon-cards-container">
+                    {pokemons && pokemons.map((pokemon) => {
+                        // return <p key={pokemon.name}> {pokemon.name}</p>})}
+                        // console.log(pokemon);
 
-                return (
-                        <Pokemon name={pokemon.name} key={pokemon.name}/>
-                )
-              })}
-        </div>
-    </div>
-  </>
-  );
+                        return (
+                            <Pokemon name={pokemon.name} key={pokemon.name}/>
+                        )
+                    })}
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default App;

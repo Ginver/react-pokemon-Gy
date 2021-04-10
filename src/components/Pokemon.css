@@ -10,16 +10,21 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-
     padding: 15px;
     margin: 15px;
-
     width: 150px;
-    height: 250px;
+    height: 350px;
     border: lightgoldenrodyellow;
     border-style: solid;
     border-radius: 15px;
-    font-family: "Berlin Sans FB", serif;
+    /*font-family: "Berlin Sans FB", serif;*/
     font-size: smaller;
-    color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
 }

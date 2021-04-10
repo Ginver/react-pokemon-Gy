@@ -10,6 +10,7 @@ function Pokemon({name}) {
 
     useEffect(() => {
         async function fetchCards() {
+
             try {
                 const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
                 setPokemonCards(response.data);
@@ -38,9 +39,9 @@ function Pokemon({name}) {
                 <img src={pokemonCards.sprites?.front_default} alt="requested pokemon" />
                 <p>Moves: {moves}</p>
                 <p>Weight: {pokemonCards.weight}</p>
-                <p>Abilities: {abilities && abilities.map((ability) => {
-                    return console.log(ability.ability.name)
-                })}</p>
+                <ul>Abilities: {abilities && abilities.map((ability) => {
+                    return <li key={ability.ability.name}>{ability.ability.name}</li>
+                })}</ul>
             </>
             }
         </div>
