@@ -22,7 +22,7 @@ function App() {
     }
 
     useEffect(() => {
-        fetchData('https://pokeapi.co/api/v2/{endpoint}/');
+        fetchData('https://pokeapi.co/api/v2/{endpoint}');
     },[pokemons]);
 
     return (
@@ -48,16 +48,15 @@ function App() {
                         NEXT
                     </button>
                 </div>
+
                 <div id="pokemon-cards-container">
                     {pokemons && pokemons.map((pokemon) => {
-                        // return <p key={pokemon.name}> {pokemon.name}</p>})}
-                        // console.log(pokemon);
-
                         return (
                             <Pokemon name={pokemon.name} key={pokemon.name}/>
                         )
                     })}
                 </div>
+
             </div>
         </>
     );
