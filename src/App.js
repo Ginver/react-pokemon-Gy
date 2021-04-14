@@ -11,8 +11,9 @@ function App() {
     async function fetchData(url) {
         try {
             const response = await axios.get(url);
+            console.log('Wat is response?', response) // response.data: count, next, results, previous
             setPokemons(response.data.results);
-            setNextButton(response.data.next);
+            setNextButton(response.data.next); // url - volgende 20 poke
             setPreviousButton(response.data.previous);
             // console.log(response.data.results);
 
@@ -22,8 +23,10 @@ function App() {
     }
 
     useEffect(() => {
-        fetchData('https://pokeapi.co/api/v2/{endpoint}');
-    },[pokemons]);
+        // console.log('Wat is endpoint?', endpoint)
+        fetchData('https://pokeapi.co/api/v2/pokemon');
+
+    },[]);
 
     return (
         <>
