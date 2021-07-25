@@ -1,0 +1,30 @@
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pokemonCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    width: 150px;
+    height: 350px;
+    border: lightgoldenrodyellow;
+    border-style: solid;
+    border-radius: 15px;
+    /*font-family: "Berlin Sans FB", serif;*/
+    font-size: smaller;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
